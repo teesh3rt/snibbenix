@@ -9,8 +9,6 @@ pkgs.stdenv.mkDerivation {
 	hash = "sha256-KxAq7UySXmGrr6LulOX53qEHUD2gIRAe3Qle1lDQbAw=";
     };
 
-    patches = [ ./patch_makefile.patch ];
-
     buildPhase = ''
     cd res/linux/
     make snibbetracker
